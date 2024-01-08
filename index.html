@@ -42,32 +42,78 @@
                         <br><br>
                         My native language is <span>Spanish</span> and in 2019, I obtained the <span>Cambridge C1 English</span> proficiency certificate.
                         Additionally, along the course 2023/24, I am enrolled in the <span>Univeristy of Toulouse Capitole</span>, studying
-                        the Master MIAGE 2IS, therefore I'm also comfortable speaking in <span>French (B1)</span>.
+                        the Master MIAGE 2IS, therefore I'm also comfortable speaking in <span>French</span>.
 
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links activeLink">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links activeLink" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('languages')">Languages</p>
                     </div>
-                    <div class="tabContents">
+                    <div class="tabContents activeTab" id="skills">
                         <ul>
-                            <li><span>UI/UX<br></span> Designing Web/App interfaces</li>
-                            <li><span>Web Development<br></span> Web services API, Google App Engine</li>
-                            <li><span>Web Design<br></span> Frontend & Backend architecture</li>
+                            <li><span>UI/UX<br></span>Designing Web/App interfaces</li>
+                            <li><span>Web Development<br></span>Web services API, Google App Engine</li>
+                            <li><span>Web Design<br></span>Frontend & Backend architecture</li>
+                            <li><span>Database management<br></span>SQL programming</li>
+                            <li><span>OS Administration<br></span>Windows & Linux</li>
+                            <li><span>App Development<br></span>Java applications</li>
+                            <li><span>Modeling and Graphic Visualization<br></span>Blender environment</li>
+                            <li><span>Logo Design<br></span>Inkscape environment</li>
                         </ul>
                     </div>
-                    <div class="tabContents">
+                    <div class="tabContents" id="education">
                         <ul>
-                            <li><span>Database management<br></span> SQL programming</li>
-                            <li><span>OS Administration<br></span> Windows & Linux</li>
-                            <li><span>App Development<br></span> Java applications</li>
+                            <li><span>University of Seville<br></span>Software Engineering</li>
+                            <li><span>University of Toulouse Capitole 1<br></span>Master MIAGE 2IS - Erasmus program</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="languages">
+                        <ul>
+                            <li><span>Spanish<br></span>Native</li>
+                            <li><span>English<br></span>C1 Cambridge Certificate</li>
+                            <li><span>French<br></span>B1</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <script>
+            var tabLinks = document.getElementsByClassName("tab-links");
+            var tabContents = document.getElementsByClassName("tabContents");
+            function opentab(tab){
+                for(tabLink of tabLinks){
+                    tabLink.classList.remove("activeLink");
+                }
+                for (tabContent of tabContents){
+                    tabContent.classList.remove("activeTab");
+                }
+                event.currentTarget.classList.add("activeLink");
+                document.getElementById(tab).classList.add("activeTab");
+            }
+    </script>
 </body>
 </html>
