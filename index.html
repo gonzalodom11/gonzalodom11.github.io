@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Gonzalo Domínguez</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a72783da1a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id = "header">
@@ -52,7 +53,7 @@
                     </div>
                     <div class="tabContents activeTab" id="skills">
                         <ul>
-                            <li><span>UI/UX<br></span>Designing Web/App interfaces</li>
+                            <!-- <li><span>UI/UX<br></span>Designing Web/App interfaces</li> -->
                             <li><span>Web Development<br></span>Web services API, Google App Engine</li>
                             <li><span>Web Design<br></span>Frontend & Backend architecture</li>
                             <li><span>Database management<br></span>SQL programming</li>
@@ -66,19 +67,7 @@
                         <ul>
                             <li><span>University of Seville<br></span>Software Engineering</li>
                             <li><span>University of Toulouse Capitole 1<br></span>Master MIAGE 2IS - Erasmus program</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+
                         </ul>
                     </div>
                     <div class="tabContents" id="languages">
@@ -86,21 +75,57 @@
                             <li><span>Spanish<br></span>Native</li>
                             <li><span>English<br></span>C1 Cambridge Certificate</li>
                             <li><span>French<br></span>B1</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- --- services --- services --- services --- services --- services --- services -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My projects</h1>
+            <div class="projectsList">
+                <div>
+                    <i class="fa-solid fa-clover"></i>
+                    <h2>Gorgonzola</h2>
+                    <p>
+                        Application for simulating a lottery game.
+                        JavaFX is been chosen as the software platform and the
+                        design of the user interface has been developed in Scene Builder program.
+                        <br><a href="https://github.com/gonzalodom11/Gorgonzola-Lottery">Learn more</a>
+                    </p>
+
+                    <img src="images/lettreG.jpg">
+                </div>
+                <div>
+                    <i class="fa-sharp fa-regular fa-futbol"></i>
+                    <h2>Quemadillas</h2>
+                    <p>
+                        Program for computing statistics about a football team.
+                        Java and Python have been used to deliver a system which create tables
+                        and diagrams about data such as goals and victories from the individual players.
+                        <br><a href="https://github.com/gonzalodom11/C.D-Quemadillas">Learn more</a>
+                    </p>
+
+                    <img src="images/img.png" >
+                </div>
+                <div>
+                    <i class="fa-solid fa-car"></i>
+                    <h2>Chicago freestyle</h2>
+                    <p>
+                        Blender project which recreates the videoclip of Chicago Freestyle from the artist Drake.
+                        Every object and animation have been designed from scratch using several and distinct techniques.
+                        <br><a href="https://github.com/Mancasvel/blender_project_chicago_freestyle">Learn more</a>
+                    </p>
+                    <img src="images/blenderCar.png" id="car" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script>
             var tabLinks = document.getElementsByClassName("tab-links");
             var tabContents = document.getElementsByClassName("tabContents");
