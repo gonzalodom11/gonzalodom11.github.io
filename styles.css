@@ -205,7 +205,15 @@ nav ul li a:hover::after{
     padding: 40px;
     font-size: 14px;
     border-right: 10px;
+    border-radius: 10px;
 }
+.projectsList div:hover{
+    background: #3b3b3b;
+    transform: scale(103%);
+
+}
+
+
 .projectsList img{
     width: 140px;
     height: 200px;
@@ -222,8 +230,25 @@ nav ul li a:hover::after{
 #car{
     width: 300px;
 }
-#g{
-
+.projectsList div p{
+    font-size: 20px;
+    padding: 15px 0px;
+    padding-bottom: 5px;
+    text-align: left;
 }
+.bouncing-image {
+    transition: transform 0.2s ease-in-out;
+}
+
+.bouncing-image:hover {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
 
 
