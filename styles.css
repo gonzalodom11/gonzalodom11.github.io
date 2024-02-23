@@ -90,6 +90,41 @@ nav ul li a:hover::after{
 
 /* ------- about ------- about ------- about ------- about ------- about ------- about ------- about ------- about  */
 
+.slider{
+    width: 467px; height: 397px;
+    background: url("images/java.png");
+    margin: 50px auto;
+    animation: slide 15s infinite;
+    #background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+
+}
+
+
+@keyframes slide {
+    33%{
+        background: url("images/java.png");
+        width: 467px; height: 397px;
+
+        #background-size: cover ;
+        background-position: center;
+    }
+    64%{
+        background: url("images/université.png");
+        width: 355px; height: 158px;
+        #background-size: cover ;
+        background-position: center;
+    }
+
+    100%{
+        width: 397px; height: 271px;
+        background: url("images/langues.png");
+        #background-size: cover;
+        background-position: center;
+    }
+}
+
 #about{
     padding: 4% 0%;
     color: #ababab;
@@ -103,10 +138,13 @@ nav ul li a:hover::after{
 
 .aboutCol1{
     flex-basis: 30%;
+    margin-bottom: 10px;
+    
 }
 .aboutCol1 img{
     width: 100%;
     border-radius: 10%;
+    margin-top: 0px;
 }
 
 .aboutCol2{
@@ -154,9 +192,14 @@ nav ul li a:hover::after{
 .tab-links.activeLink::after{
     width: 100%;
 }
+.tabContents img{
+    margin-top: 50px;
+}
+
 .tabContents{
     display: none;
 }
+
 .tabContents ul li{
     list-style: none;
     margin: 10px;

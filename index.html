@@ -34,6 +34,17 @@
             <div class="row">
                 <div class="aboutCol1">
                     <img src="images/1692701972934.jpg">
+
+                    <div class="tabContents activeTab" id="skillsImg">
+                        <img src="images/java.png">
+                    </div>
+                    <div class="tabContents" id="educationImg">
+                        <img  src="images/université.png">
+                    </div>
+                    <div class="tabContents" id="languagesImg">
+                        <img src="images/langues.png">
+                    </div>
+
                 </div>
                 <div class="aboutCol2">
                     <h1 class="subtitle">About me</h1>
@@ -132,14 +143,17 @@
             var tabLinks = document.getElementsByClassName("tab-links");
             var tabContents = document.getElementsByClassName("tabContents");
             function opentab(tab){
+                const name = tab + "Img";
                 for(tabLink of tabLinks){
                     tabLink.classList.remove("activeLink");
                 }
                 for (tabContent of tabContents){
                     tabContent.classList.remove("activeTab");
+                    tabContent.classList.remove("activeTab")
                 }
                 event.currentTarget.classList.add("activeLink");
                 document.getElementById(tab).classList.add("activeTab");
+                document.getElementById(name).classList.add("activeTab");
             }
     </script>
 </body>
