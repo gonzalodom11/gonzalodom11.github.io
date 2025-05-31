@@ -2,194 +2,295 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gonzalo Domínguez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo Domínguez - Software Engineer</title>
+    <meta name="description" content="Full-stack software engineer specialized in web development, with experience in agile methodologies and modern frameworks.">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a72783da1a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <div id = "header">
-        <div class="container">
-            <nav>
-                <img src="images/Imagen2.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-
-                </ul>
-            </nav>
-
-            <div class="header-text">
-                <p>Software Engineer </p>
-                <img src="images/timesSquareCircle.png" class="profile">
-                <h1>Hello,<br> I'm <span>Gonzalo Domínguez,</span><br> welcome to my personal website</h1>
-            </div>
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <img src="images/Imagen2.png" alt="Gonzalo Domínguez Logo" class="logo">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#header" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="https://www.linkedin.com/in/gonzalodm9/" class="nav-link" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </div>
-    <! -------- about -------- about-------- about-------- about-------- about-------- about>
-    <div id="about">
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="header" class="section">
         <div class="container">
-            <div class="row">
-                <div class="aboutCol1">
-                    <img src="images/1692701972934.jpg">
-
-                    <div class="tabContents activeTab" id="skillsImg">
-                        <img src="images/java.png">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">Software Engineer</p>
+                    <h1 class="hero-title">
+                        Hello,<br>
+                        I'm <span class="highlight">Gonzalo Domínguez</span>,<br>
+                        welcome to my portfolio
+                    </h1>
+                    
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-code"></i>
+                            View My Work
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <i class="fas fa-user"></i>
+                            About Me
+                        </a>
                     </div>
-                    <div class="tabContents" id="educationImg">
-                        <img  src="images/université.png">
-                    </div>
-                    <div class="tabContents" id="languagesImg">
-                        <img src="images/langues.png">
-                    </div>
-
                 </div>
-                <div class="aboutCol2">
-                    <h1 class="subtitle">About me</h1>
-                    <p>Software Engineering student at the <span>University of Seville</span>.<br>
-                        During these recent years, I have improved my skills in Java, Python, SQL, JavaScript and many more. Moreover, I have
-                        completed multiple projects related to Web Services API, as well as, Frontend and Backend design.
-
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links activeLink" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('languages')">Languages</p>
-                    </div>
-                    <div class="tabContents activeTab" id="skills">
-                        <ul>
-                            <!-- <li><span>UI/UX<br></span>Designing Web/App interfaces</li> -->
-                            <li><span>Web Development and Design<br></span>Web services API, Frontend & Backend architecture</li>
-                            <li><span>Database management<br></span>SQL programming</li>
-                            <li><span>OS Administration<br></span>Windows & Linux</li>
-                            <li><span>App Development<br></span>Java applications</li>
-                            <li><span>Modeling and Graphic Visualization<br></span>Blender environment</li>
-                            <li><span>Logo Design<br></span>Inkscape environment</li>
-                        </ul>
-                    </div>
-                    <div class="tabContents" id="education">
-                        <ul>
-                            <li><span>University of Seville<br></span>Software Engineering</li>
-                            <li><span>University of Toulouse Capitole 1<br></span>Master MIAGE 2IS - Exchange program</li>
-
-                        </ul>
-                    </div>
-                    <div class="tabContents" id="languages">
-                        <ul>
-                            <li><span>Spanish<br></span>Native</li>
-                            <li><span>English<br></span>C1 Cambridge Certificate</li>
-                            <li><span>French<br></span>B1</li>
-
-                        </ul>
-                    </div>
+                <div class="hero-image">
+                    <img src="images/torre-eiffel.jpg" alt="Gonzalo Domínguez" class="profile-image">
                 </div>
             </div>
         </div>
-    </div>
-    <!-- --- services --- services --- services --- services --- services --- services -->
-    <div id="projects">
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
         <div class="container">
-            <h1 class="subtitle">My projects</h1>
-            <div class="projectsList">
-                <div>
-                    <i class="fa-solid fa-clover"></i>
-                    <h2>Gorgonzola</h2>
-                    <p>
-                        Application for simulating a lottery game.<br>
-                        <br>
-                    </p>
-                    <a href="https://github.com/gonzalodom11/Gorgonzola-Lottery">
-                        <img src="images/lettreG.jpg" class="bouncing-image">
-                    </a>
+            <div class="about-grid">
+                <div class="about-image-container">
+                    <img src="images/1692701972934.jpg" alt="Gonzalo Domínguez professional photo" class="about-image">
                 </div>
-                <div>
-                    <i class="fa-sharp fa-regular fa-futbol"></i>
-                    <h2>Quemadillas</h2>
-                    <p>
-                        Program for computing statistics about a football team.<br>
-                        <br>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p class="about-text">
+                        <span class="highlight">Full-stack</span> engineer specialized in software development, 
+                        with strong experience in agile methodologies and project management.
+                        <br><br>
+                        I've developed multiple web applications using modern frameworks 
+                        and technologies across the full stack — from RESTful APIs and 
+                        database management to intuitive frontend interfaces and backend services.
                     </p>
-                    <a href="https://github.com/gonzalodom11/C.D-Quemadillas">
-                        <img src="images/img.png" class="bouncing-image">
-                    </a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-car"></i>
-                    <h2>Chicago freestyle</h2>
-                    <p>
-                        Blender project which recreates the videoclip of Chicago Freestyle by the singer Drake.<br>
-                        <br>
-                    </p>
-                    <a href="https://github.com/Mancasvel/blender_project_chicago_freestyle">
-                        <img src="images/blenderCar.png" id="car" class="bouncing-image" >
-                    </a>
+                    
+                    <div class="tab-navigation" role="tablist">
+                        <button class="tab-button active" role="tab" aria-selected="true" aria-controls="skills" id="skills-tab" onclick="openTab(event, 'skills')">
+                            Skills
+                        </button>
+                        <button class="tab-button" role="tab" aria-selected="false" aria-controls="education" id="education-tab" onclick="openTab(event, 'education')">
+                            Education
+                        </button>
+                        <button class="tab-button" role="tab" aria-selected="false" aria-controls="languages" id="languages-tab" onclick="openTab(event, 'languages')">
+                            Languages
+                        </button>
+                    </div>
+                    
+                    <div class="tab-content active" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-title">Web Development & Design</div>
+                                <div class="skill-description">Web services API, Django, Spring Boot, Flask, Express, React,
+                                    Next.js, Node.js, Tailwind</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-title">Database Management</div>
+                                <div class="skill-description">SQL programming and database optimization: MySQL, PostgreSQL, MongoDB</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-title">OS Administration</div>
+                                <div class="skill-description">Windows & Linux system administration</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-title">App Development</div>
+                                <div class="skill-description">Java and mobile applications</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-title">Deployment & DevOps</div>
+                                <div class="skill-description">Docker, Github CI/CD, Vercel, Azure,
+                                    Railway, AWS</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-title">Most Programming Languages</div>
+                                <div class="skill-description">Java, Python, JavaScript, TypeScript, CSS, HTML</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="education" role="tabpanel" aria-labelledby="education-tab">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-title">University of Seville</div>
+                                <div class="skill-description">Software Engineering Degree</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-title">University of Toulouse Capitole 1</div>
+                                <div class="skill-description">Master MIAGE 2IS - Exchange program</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="languages" role="tabpanel" aria-labelledby="languages-tab">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-title">Spanish</div>
+                                <div class="skill-description">Native speaker</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-title">English</div>
+                                <div class="skill-description">C1 Cambridge Certificate</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-title">French</div>
+                                <div class="skill-description">B1 Intermediate level</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- --- services --- services --- services --- services --- services --- services -->
-    <!-- --- services --- services --- services --- services --- services --- services -->
-    <div id="projects">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
         <div class="container">
-            <h1 class="subtitle">My research papers</h1>
-            <div class="projectsList">
-                <div>
-                    <i class="fa-solid fa-clover"></i>
-                    <h2>Why we should trust AI?</h2>
-                    <p>
-                        José Gonzalo Domínguez, Ayishwarya Laksumi, and Sumaiya Sultana<br>
-                        Abril, 2024
-                        <br>
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <i class="fa-solid fa-clover project-icon"></i>
+                    <h3 class="project-title">Gorgonzola</h3>
+                    <p class="project-description">
+                        Application for simulating a lottery game with modern UI and 
+                        comprehensive game mechanics.
                     </p>
-                    <a href="https://github.com/gonzalodom11/gonzalodom11.github.io/blob/main/papers/Why%20we%20should%20trust%20AI.pdf">
-                        <img src="images/B3-BAND-Fairness-GG_c0-80-2200-1362_s1770x1032.webp" class="bouncing-image">
+                    <a href="https://github.com/gonzalodom11/Gorgonzola-Lottery" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <img src="images/lettreG.jpg" alt="Gorgonzola project screenshot" class="project-image">
                     </a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-clover"></i>
-                    <h2>Six nations problem</h2>
-                    <p>
-                        Yi fan HAO, José Gonzalo Domínguez, Aygun, Benjamin<br>
-                        March, 2024
-                        <br>
-                    </p>
-                    <a href="https://github.com/gonzalodom11/gonzalodom11.github.io/blob/main/papers/COMPUTATIONAL_INTELLIGENCE_AI_PROJECT__REASONING.pdf">
-                        <img src="images/Imagen1.png" class="bouncing-image">
-                    </a>
-                </div>
+                </article>
                 
+                <article class="project-card">
+                    <i class="fa-sharp fa-regular fa-futbol project-icon"></i>
+                    <h3 class="project-title">Quemadillas</h3>
+                    <p class="project-description">
+                        Program for computing comprehensive statistics about a football team 
+                        with data visualization and analytics.
+                    </p>
+                    <a href="https://github.com/gonzalodom11/C.D-Quemadillas" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <img src="images/img.png" alt="Quemadillas project screenshot" class="project-image">
+                    </a>
+                </article>
+                
+                <article class="project-card">
+                    <i class="fa-solid fa-car project-icon"></i>
+                    <h3 class="project-title">Chicago Freestyle</h3>
+                    <p class="project-description">
+                        Blender project recreating the videoclip of Chicago Freestyle by Drake 
+                        with detailed 3D modeling and animation.
+                    </p>
+                    <a href="https://github.com/Mancasvel/blender_project_chicago_freestyle" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <img src="images/blenderCar.png" alt="Chicago Freestyle 3D project" class="project-image">
+                    </a>
+                </article>
             </div>
         </div>
-    </div>
+    </section>
 
-
-    <!-- ------- Portfolio --------------- -->
-
-    <div id="portfolio">
+    <!-- Research Papers Section -->
+    <section id="research" class="section">
         <div class="container">
-            <h1 class="subtitle"></h1>
-
+            <h2 class="section-title">Research Papers</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <i class="fa-solid fa-brain project-icon"></i>
+                    <h3 class="project-title">Why We Should Trust AI?</h3>
+                    <p class="project-description">
+                        José Gonzalo Domínguez, Ayishwarya Laksumi, and Sumaiya Sultana<br>
+                        <em>April 2024</em>
+                    </p>
+                    <a href="https://github.com/gonzalodom11/gonzalodom11.github.io/blob/main/papers/Why%20we%20should%20trust%20AI.pdf" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <img src="images/B3-BAND-Fairness-GG_c0-80-2200-1362_s1770x1032.webp" alt="AI Trust research paper" class="project-image">
+                    </a>
+                </article>
+                
+                <article class="project-card">
+                    <i class="fa-solid fa-puzzle-piece project-icon"></i>
+                    <h3 class="project-title">Six Nations Problem</h3>
+                    <p class="project-description">
+                        Yi fan HAO, José Gonzalo Domínguez, Aygun, Benjamin<br>
+                        <em>March 2024</em>
+                    </p>
+                    <a href="https://github.com/gonzalodom11/gonzalodom11.github.io/blob/main/papers/COMPUTATIONAL_INTELLIGENCE_AI_PROJECT__REASONING.pdf" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <img src="images/Imagen1.png" alt="Six Nations Problem research paper" class="project-image">
+                    </a>
+                </article>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section" style="padding: 2rem 0; text-align: center; border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <p style="color: var(--text-secondary);">
+                © 2024 Gonzalo Domínguez. Built with modern web technologies.
+            </p>
+        </div>
+    </footer>
 
     <script>
-            var tabLinks = document.getElementsByClassName("tab-links");
-            var tabContents = document.getElementsByClassName("tabContents");
-            function opentab(tab){
-                const name = tab + "Img";
-                for(tabLink of tabLinks){
-                    tabLink.classList.remove("activeLink");
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Tab functionality
+        function openTab(event, tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tab buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.classList.remove('active');
+                button.setAttribute('aria-selected', 'false');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.currentTarget.classList.add('active');
+            event.currentTarget.setAttribute('aria-selected', 'true');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
-                for (tabContent of tabContents){
-                    tabContent.classList.remove("activeTab");
-                    tabContent.classList.remove("activeTab")
-                }
-                event.currentTarget.classList.add("activeLink");
-                document.getElementById(tab).classList.add("activeTab");
-                document.getElementById(name).classList.add("activeTab");
-            }
+            });
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
     </script>
 </body>
 </html>
